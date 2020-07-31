@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mch-Bp-NZ3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--RRPagingCollectionView-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RRPagingCollectionView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZJP-lg-nVJ" customClass="RRPagingCollectionView" customModule="RRPagingCollectionView" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tm6-am-cfJ">
+                                    <size key="itemSize" width="394" height="139"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="50" height="50"/>
+                                    <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UserCell" id="6RI-ir-5IC" customClass="UserCell" customModule="RRPagingCollectionView" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="394" height="139"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ndy-a1-fZb">
+                                            <rect key="frame" x="0.0" y="0.0" width="394" height="139"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="12L-RX-DGK">
+                                                    <rect key="frame" x="15" y="15" width="109" height="109"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="12L-RX-DGK" secondAttribute="height" multiplier="1:1" id="NQs-PT-uqf"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="viewCornerRadius">
+                                                            <real key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTh-b8-3rg">
+                                                    <rect key="frame" x="139" y="30" width="240" height="39"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9L-xh-deo">
+                                                    <rect key="frame" x="139" y="79" width="240" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="12L-RX-DGK" firstAttribute="leading" secondItem="ndy-a1-fZb" secondAttribute="leading" constant="15" id="3YE-r9-2cM"/>
+                                                <constraint firstItem="RTh-b8-3rg" firstAttribute="centerY" secondItem="12L-RX-DGK" secondAttribute="centerY" constant="-20" id="4BL-bZ-yyd"/>
+                                                <constraint firstItem="o9L-xh-deo" firstAttribute="leading" secondItem="RTh-b8-3rg" secondAttribute="leading" id="AsC-1f-6Q5"/>
+                                                <constraint firstItem="12L-RX-DGK" firstAttribute="top" secondItem="ndy-a1-fZb" secondAttribute="top" constant="15" id="EY7-UZ-cl2"/>
+                                                <constraint firstAttribute="trailing" secondItem="RTh-b8-3rg" secondAttribute="trailing" constant="15" id="JVy-rK-2mT"/>
+                                                <constraint firstItem="RTh-b8-3rg" firstAttribute="leading" secondItem="12L-RX-DGK" secondAttribute="trailing" constant="15" id="TNA-aC-CiE"/>
+                                                <constraint firstItem="o9L-xh-deo" firstAttribute="trailing" secondItem="RTh-b8-3rg" secondAttribute="trailing" id="WmM-sO-FIW"/>
+                                                <constraint firstItem="o9L-xh-deo" firstAttribute="top" secondItem="RTh-b8-3rg" secondAttribute="bottom" constant="10" id="bjG-jp-Zlc"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="o9L-xh-deo" secondAttribute="bottom" constant="20" id="dmY-h2-J65"/>
+                                                <constraint firstAttribute="bottom" secondItem="12L-RX-DGK" secondAttribute="bottom" constant="15" id="egm-gP-aPB"/>
+                                                <constraint firstItem="RTh-b8-3rg" firstAttribute="top" secondItem="ndy-a1-fZb" secondAttribute="top" constant="30" id="u8G-Ld-Ti1"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="viewCornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="userEmailLabel" destination="o9L-xh-deo" id="B4u-I9-Sg0"/>
+                                            <outlet property="userImageView" destination="12L-RX-DGK" id="ShO-5y-aZV"/>
+                                            <outlet property="userNameLabel" destination="RTh-b8-3rg" id="gR7-uM-PNr"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RRLoadingFooter" id="cdL-Kc-v2x" customClass="RRLoadingFooter" customModule="RRPagingCollectionView" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="159" width="414" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="viewCornerRadius">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="0.5"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </collectionReusableView>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="1Bt-uY-383"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Ups-ad-8Oa"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZJP-lg-nVJ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="FpI-k6-YMH"/>
+                            <constraint firstItem="ZJP-lg-nVJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QAN-AA-9ft"/>
+                            <constraint firstItem="ZJP-lg-nVJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oGe-wJ-zzk"/>
+                            <constraint firstAttribute="bottom" secondItem="ZJP-lg-nVJ" secondAttribute="bottom" id="u95-bC-nTx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="RRPagingCollectionView" id="6g8-sk-acb"/>
+                    <connections>
+                        <outlet property="userCollectionView" destination="ZJP-lg-nVJ" id="IxS-A0-hmn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="852.17391304347836" y="138.61607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GVZ-UH-jFF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mch-Bp-NZ3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RAd-Y2-34q">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="uQ3-Mp-jB3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sOb-kS-oAX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57.971014492753625" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>

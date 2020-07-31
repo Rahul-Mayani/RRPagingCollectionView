@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33C80E94D200A3D87E81020D /* Pods_RRPagingCollectionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 823171E5E0D451C804472D93 /* Pods_RRPagingCollectionView.framework */; };
+		EE25DF3424D19CA500F994B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE25DF3324D19CA500F994B3 /* AppDelegate.swift */; };
+		EE25DF3824D19CA500F994B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE25DF3724D19CA500F994B3 /* ViewController.swift */; };
+		EE25DF3B24D19CA500F994B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE25DF3924D19CA500F994B3 /* Main.storyboard */; };
+		EE25DF3D24D19CA900F994B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE25DF3C24D19CA900F994B3 /* Assets.xcassets */; };
+		EE25DF4024D19CA900F994B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE25DF3E24D19CA900F994B3 /* LaunchScreen.storyboard */; };
+		EE25DF5124D1A17900F994B3 /* RRPagingCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE25DF4E24D1A17900F994B3 /* RRPagingCollectionView.swift */; };
+		EE25DF5224D1A17900F994B3 /* RRLoadingFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE25DF4F24D1A17900F994B3 /* RRLoadingFooter.swift */; };
+		EE25DF5324D1A17900F994B3 /* RRPagingCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE25DF5024D1A17900F994B3 /* RRPagingCollectionViewDelegate.swift */; };
+		EE372EB024D3F2C500D55E13 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE372EA424D3F2C500D55E13 /* Utilities.swift */; };
+		EE372EB124D3F2C500D55E13 /* AnimatableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE372EA524D3F2C500D55E13 /* AnimatableImageView.swift */; };
+		EE372EB224D3F2C500D55E13 /* ImageViewer-Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE372EA724D3F2C500D55E13 /* ImageViewer-Assets.xcassets */; };
+		EE372EB324D3F2C500D55E13 /* ImageViewerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE372EA824D3F2C500D55E13 /* ImageViewerController.xib */; };
+		EE372EB424D3F2C500D55E13 /* ImageViewerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE372EA924D3F2C500D55E13 /* ImageViewerConfiguration.swift */; };
+		EE372EB524D3F2C500D55E13 /* ImageViewerTransitioningHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE372EAB24D3F2C500D55E13 /* ImageViewerTransitioningHandler.swift */; };
+		EE372EB624D3F2C500D55E13 /* ImageViewerDismissalInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE372EAC24D3F2C500D55E13 /* ImageViewerDismissalInteractor.swift */; };
+		EE372EB724D3F2C500D55E13 /* ImageViewerPresentationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE372EAD24D3F2C500D55E13 /* ImageViewerPresentationTransition.swift */; };
+		EE372EB824D3F2C500D55E13 /* ImageViewerDismissalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE372EAE24D3F2C500D55E13 /* ImageViewerDismissalTransition.swift */; };
+		EE372EB924D3F2C500D55E13 /* ImageViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE372EAF24D3F2C500D55E13 /* ImageViewerController.swift */; };
+		EE6B038724D3F51F00788833 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6B037F24D3F51F00788833 /* UserCell.swift */; };
+		EE6B038824D3F51F00788833 /* RRUIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6B038124D3F51F00788833 /* RRUIImageView+Extension.swift */; };
+		EE6B038924D3F51F00788833 /* RRGeneral+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6B038224D3F51F00788833 /* RRGeneral+Extensions.swift */; };
+		EE6B038A24D3F51F00788833 /* RRDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6B038424D3F51F00788833 /* RRDataModel.swift */; };
+		EE6B038B24D3F51F00788833 /* RRAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6B038624D3F51F00788833 /* RRAPIManager.swift */; };
+		EE6B038D24D3F6EB00788833 /* RRUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6B038C24D3F6EB00788833 /* RRUIView+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		823171E5E0D451C804472D93 /* Pods_RRPagingCollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RRPagingCollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C60D0B42C70992ADF351A3CD /* Pods-RRPagingCollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RRPagingCollectionView.debug.xcconfig"; path = "Target Support Files/Pods-RRPagingCollectionView/Pods-RRPagingCollectionView.debug.xcconfig"; sourceTree = "<group>"; };
+		CCE6C6B54A9563E05F249AC7 /* Pods-RRPagingCollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RRPagingCollectionView.release.xcconfig"; path = "Target Support Files/Pods-RRPagingCollectionView/Pods-RRPagingCollectionView.release.xcconfig"; sourceTree = "<group>"; };
+		EE25DF3024D19CA500F994B3 /* RRPagingCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RRPagingCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE25DF3324D19CA500F994B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE25DF3724D19CA500F994B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE25DF3A24D19CA500F994B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE25DF3C24D19CA900F994B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE25DF3F24D19CA900F994B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE25DF4124D19CA900F994B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE25DF4E24D1A17900F994B3 /* RRPagingCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RRPagingCollectionView.swift; sourceTree = "<group>"; };
+		EE25DF4F24D1A17900F994B3 /* RRLoadingFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RRLoadingFooter.swift; sourceTree = "<group>"; };
+		EE25DF5024D1A17900F994B3 /* RRPagingCollectionViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RRPagingCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		EE372EA424D3F2C500D55E13 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		EE372EA524D3F2C500D55E13 /* AnimatableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableImageView.swift; sourceTree = "<group>"; };
+		EE372EA724D3F2C500D55E13 /* ImageViewer-Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "ImageViewer-Assets.xcassets"; sourceTree = "<group>"; };
+		EE372EA824D3F2C500D55E13 /* ImageViewerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageViewerController.xib; sourceTree = "<group>"; };
+		EE372EA924D3F2C500D55E13 /* ImageViewerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewerConfiguration.swift; sourceTree = "<group>"; };
+		EE372EAB24D3F2C500D55E13 /* ImageViewerTransitioningHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewerTransitioningHandler.swift; sourceTree = "<group>"; };
+		EE372EAC24D3F2C500D55E13 /* ImageViewerDismissalInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewerDismissalInteractor.swift; sourceTree = "<group>"; };
+		EE372EAD24D3F2C500D55E13 /* ImageViewerPresentationTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewerPresentationTransition.swift; sourceTree = "<group>"; };
+		EE372EAE24D3F2C500D55E13 /* ImageViewerDismissalTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewerDismissalTransition.swift; sourceTree = "<group>"; };
+		EE372EAF24D3F2C500D55E13 /* ImageViewerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewerController.swift; sourceTree = "<group>"; };
+		EE6B037F24D3F51F00788833 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		EE6B038124D3F51F00788833 /* RRUIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RRUIImageView+Extension.swift"; sourceTree = "<group>"; };
+		EE6B038224D3F51F00788833 /* RRGeneral+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RRGeneral+Extensions.swift"; sourceTree = "<group>"; };
+		EE6B038424D3F51F00788833 /* RRDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RRDataModel.swift; sourceTree = "<group>"; };
+		EE6B038624D3F51F00788833 /* RRAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RRAPIManager.swift; sourceTree = "<group>"; };
+		EE6B038C24D3F6EB00788833 /* RRUIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RRUIView+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE25DF2D24D19CA500F994B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33C80E94D200A3D87E81020D /* Pods_RRPagingCollectionView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2195E6A351A37ECE14BEDE96 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C60D0B42C70992ADF351A3CD /* Pods-RRPagingCollectionView.debug.xcconfig */,
+				CCE6C6B54A9563E05F249AC7 /* Pods-RRPagingCollectionView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A02DB2D0751EB415DFE0036B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				823171E5E0D451C804472D93 /* Pods_RRPagingCollectionView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE25DF2724D19CA500F994B3 = {
+			isa = PBXGroup;
+			children = (
+				EE25DF3224D19CA500F994B3 /* RRPagingCollectionView */,
+				EE25DF3124D19CA500F994B3 /* Products */,
+				2195E6A351A37ECE14BEDE96 /* Pods */,
+				A02DB2D0751EB415DFE0036B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EE25DF3124D19CA500F994B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE25DF3024D19CA500F994B3 /* RRPagingCollectionView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE25DF3224D19CA500F994B3 /* RRPagingCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				EE372EA224D3F2C500D55E13 /* Vendor */,
+				EE6B038024D3F51F00788833 /* Extension */,
+				EE6B038524D3F51F00788833 /* Utility Classes */,
+				EE6B038324D3F51F00788833 /* Model Classes */,
+				EE25DF4D24D1A17900F994B3 /* PagingCollectionView */,
+				EE6B037E24D3F51F00788833 /* Cell */,
+				EE25DF3324D19CA500F994B3 /* AppDelegate.swift */,
+				EE25DF3724D19CA500F994B3 /* ViewController.swift */,
+				EE25DF3924D19CA500F994B3 /* Main.storyboard */,
+				EE25DF3C24D19CA900F994B3 /* Assets.xcassets */,
+				EE25DF3E24D19CA900F994B3 /* LaunchScreen.storyboard */,
+				EE25DF4124D19CA900F994B3 /* Info.plist */,
+			);
+			path = RRPagingCollectionView;
+			sourceTree = "<group>";
+		};
+		EE25DF4D24D1A17900F994B3 /* PagingCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				EE25DF5024D1A17900F994B3 /* RRPagingCollectionViewDelegate.swift */,
+				EE25DF4F24D1A17900F994B3 /* RRLoadingFooter.swift */,
+				EE25DF4E24D1A17900F994B3 /* RRPagingCollectionView.swift */,
+			);
+			path = PagingCollectionView;
+			sourceTree = "<group>";
+		};
+		EE372EA224D3F2C500D55E13 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				EE372EA324D3F2C500D55E13 /* ImageViewer */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		EE372EA324D3F2C500D55E13 /* ImageViewer */ = {
+			isa = PBXGroup;
+			children = (
+				EE372EA424D3F2C500D55E13 /* Utilities.swift */,
+				EE372EA524D3F2C500D55E13 /* AnimatableImageView.swift */,
+				EE372EA624D3F2C500D55E13 /* Resources */,
+				EE372EA924D3F2C500D55E13 /* ImageViewerConfiguration.swift */,
+				EE372EAA24D3F2C500D55E13 /* Transitions */,
+				EE372EAF24D3F2C500D55E13 /* ImageViewerController.swift */,
+			);
+			path = ImageViewer;
+			sourceTree = "<group>";
+		};
+		EE372EA624D3F2C500D55E13 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE372EA724D3F2C500D55E13 /* ImageViewer-Assets.xcassets */,
+				EE372EA824D3F2C500D55E13 /* ImageViewerController.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EE372EAA24D3F2C500D55E13 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				EE372EAB24D3F2C500D55E13 /* ImageViewerTransitioningHandler.swift */,
+				EE372EAC24D3F2C500D55E13 /* ImageViewerDismissalInteractor.swift */,
+				EE372EAD24D3F2C500D55E13 /* ImageViewerPresentationTransition.swift */,
+				EE372EAE24D3F2C500D55E13 /* ImageViewerDismissalTransition.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		EE6B037E24D3F51F00788833 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EE6B037F24D3F51F00788833 /* UserCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EE6B038024D3F51F00788833 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EE6B038124D3F51F00788833 /* RRUIImageView+Extension.swift */,
+				EE6B038224D3F51F00788833 /* RRGeneral+Extensions.swift */,
+				EE6B038C24D3F6EB00788833 /* RRUIView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EE6B038324D3F51F00788833 /* Model Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EE6B038424D3F51F00788833 /* RRDataModel.swift */,
+			);
+			path = "Model Classes";
+			sourceTree = "<group>";
+		};
+		EE6B038524D3F51F00788833 /* Utility Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EE6B038624D3F51F00788833 /* RRAPIManager.swift */,
+			);
+			path = "Utility Classes";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE25DF2F24D19CA500F994B3 /* RRPagingCollectionView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE25DF4424D19CA900F994B3 /* Build configuration list for PBXNativeTarget "RRPagingCollectionView" */;
+			buildPhases = (
+				4F50875D7D06F46F641C5E59 /* [CP] Check Pods Manifest.lock */,
+				EE25DF2C24D19CA500F994B3 /* Sources */,
+				EE25DF2D24D19CA500F994B3 /* Frameworks */,
+				EE25DF2E24D19CA500F994B3 /* Resources */,
+				31ABF6BAEF6E94CB5D43B8F3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RRPagingCollectionView;
+			productName = RRPagingCollectionView;
+			productReference = EE25DF3024D19CA500F994B3 /* RRPagingCollectionView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE25DF2824D19CA500F994B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = RR;
+				TargetAttributes = {
+					EE25DF2F24D19CA500F994B3 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = EE25DF2B24D19CA500F994B3 /* Build configuration list for PBXProject "RRPagingCollectionView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE25DF2724D19CA500F994B3;
+			productRefGroup = EE25DF3124D19CA500F994B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE25DF2F24D19CA500F994B3 /* RRPagingCollectionView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE25DF2E24D19CA500F994B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE372EB224D3F2C500D55E13 /* ImageViewer-Assets.xcassets in Resources */,
+				EE25DF4024D19CA900F994B3 /* LaunchScreen.storyboard in Resources */,
+				EE372EB324D3F2C500D55E13 /* ImageViewerController.xib in Resources */,
+				EE25DF3D24D19CA900F994B3 /* Assets.xcassets in Resources */,
+				EE25DF3B24D19CA500F994B3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31ABF6BAEF6E94CB5D43B8F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RRPagingCollectionView/Pods-RRPagingCollectionView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RRPagingCollectionView/Pods-RRPagingCollectionView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RRPagingCollectionView/Pods-RRPagingCollectionView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F50875D7D06F46F641C5E59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RRPagingCollectionView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE25DF2C24D19CA500F994B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE6B038B24D3F51F00788833 /* RRAPIManager.swift in Sources */,
+				EE372EB624D3F2C500D55E13 /* ImageViewerDismissalInteractor.swift in Sources */,
+				EE25DF5224D1A17900F994B3 /* RRLoadingFooter.swift in Sources */,
+				EE6B038924D3F51F00788833 /* RRGeneral+Extensions.swift in Sources */,
+				EE372EB724D3F2C500D55E13 /* ImageViewerPresentationTransition.swift in Sources */,
+				EE25DF5124D1A17900F994B3 /* RRPagingCollectionView.swift in Sources */,
+				EE6B038D24D3F6EB00788833 /* RRUIView+Extension.swift in Sources */,
+				EE372EB524D3F2C500D55E13 /* ImageViewerTransitioningHandler.swift in Sources */,
+				EE25DF3824D19CA500F994B3 /* ViewController.swift in Sources */,
+				EE6B038724D3F51F00788833 /* UserCell.swift in Sources */,
+				EE372EB824D3F2C500D55E13 /* ImageViewerDismissalTransition.swift in Sources */,
+				EE25DF5324D1A17900F994B3 /* RRPagingCollectionViewDelegate.swift in Sources */,
+				EE372EB024D3F2C500D55E13 /* Utilities.swift in Sources */,
+				EE25DF3424D19CA500F994B3 /* AppDelegate.swift in Sources */,
+				EE6B038A24D3F51F00788833 /* RRDataModel.swift in Sources */,
+				EE372EB924D3F2C500D55E13 /* ImageViewerController.swift in Sources */,
+				EE372EB424D3F2C500D55E13 /* ImageViewerConfiguration.swift in Sources */,
+				EE372EB124D3F2C500D55E13 /* AnimatableImageView.swift in Sources */,
+				EE6B038824D3F51F00788833 /* RRUIImageView+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EE25DF3924D19CA500F994B3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE25DF3A24D19CA500F994B3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE25DF3E24D19CA900F994B3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE25DF3F24D19CA900F994B3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE25DF4224D19CA900F994B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE25DF4324D19CA900F994B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE25DF4524D19CA900F994B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C60D0B42C70992ADF351A3CD /* Pods-RRPagingCollectionView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RRPagingCollectionView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rr.RRPagingCollectionView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EE25DF4624D19CA900F994B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCE6C6B54A9563E05F249AC7 /* Pods-RRPagingCollectionView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RRPagingCollectionView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rr.RRPagingCollectionView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE25DF2B24D19CA500F994B3 /* Build configuration list for PBXProject "RRPagingCollectionView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE25DF4224D19CA900F994B3 /* Debug */,
+				EE25DF4324D19CA900F994B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE25DF4424D19CA900F994B3 /* Build configuration list for PBXNativeTarget "RRPagingCollectionView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE25DF4524D19CA900F994B3 /* Debug */,
+				EE25DF4624D19CA900F994B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE25DF2824D19CA500F994B3 /* Project object */;
+}

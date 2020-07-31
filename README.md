@@ -7,8 +7,11 @@ Paging Collection View with image loading
 ## Requirements
 
 pod 'RxCocoa'
+
 pod 'RxSwift'
+
 pod 'RxGesture'
+
 pod 'Kingfisher'
 
 ## Installation

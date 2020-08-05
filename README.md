@@ -4,7 +4,7 @@
 [![Swift 5.1](https://img.shields.io/badge/Swift-5.1-orange.svg?style=flat)](https://developer.apple.com/swift/)
 
 The simplest way to add paginate function to your collection view.  
-All you have to do is just set your collection view class in the storyboard to `RRPagingCollectionView`, and implement the `PagingCollectionViewDelegate#paginate`
+All you have to do is just set your collection view class in the storyboard to `RRPagingCollectionView`, and implement the `RRPagingCollectionViewDelegate#paginate`
 
 ## Example
 ![alt text](https://github.com/Rahul-Mayani/RRPagingCollectionView/blob/master/sample.gif)
@@ -75,7 +75,7 @@ To run the example project, clone the repo, and run pod install from the Example
 
 | Name | Type | Description |
 |---|---|---|
-| `pagingDelegate` | `PagingCollectionViewDelegate` | Delegate pagination processing |
+| `pagingDelegate` | `RRPagingCollectionViewDelegate` | Delegate pagination processing |
 | `currentPage` | `Int` | Returns the current page |
 | `isLoading` | `Bool` | Shows and hides the loading indicator. Reload collection view data after loading |
 | `reset()` | `Void` | Return page to 0 and call `paginate` function |

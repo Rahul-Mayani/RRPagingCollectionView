@@ -27,8 +27,12 @@ pod 'Kingfisher'
 3. Congratulations!  
 
 ## Usage example
-To run the example project, clone the repo, and run pod install from the Example directory first.
 
+First set your collection view class in the storyboard to `RRPagingCollectionView`
+
+<img src="sample.png" width="500" />
+
+Then implement `paginate` function. If `isLoading` is set to true, an indicator is displayed at the bottom of the collection view. Otherwise, the indicator disappears and `UICollectionView.reloadData` is called.
 
 ```swift
 
@@ -65,6 +69,7 @@ collectionView.reloadData()
 collectionView.isLoading = false
 
 ```
+To run the example project, clone the repo, and run pod install from the Example directory first.
 
 ## APIs
 

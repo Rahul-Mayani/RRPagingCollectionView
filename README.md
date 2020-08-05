@@ -1,5 +1,10 @@
 # RRPagingCollectionView
-Paging Collection View with image loading
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/Rahul-Mayani/RRPagingCollectionView/blob/master/LICENSE)
+[![Platform](https://img.shields.io/cocoapods/p/PagingTableView.svg?style=flat)](https://github.com/Rahul-Mayani/RRPagingCollectionView/tree/master/RRPagingCollectionView/PagingCollectionView)
+[![Swift 5.1](https://img.shields.io/badge/Swift-5.1-orange.svg?style=flat)](https://developer.apple.com/swift/)
+
+The simplest way to add paginate function to your collection view.  
+All you have to do is just set your collection view class in the storyboard to `RRPagingCollectionView`, and implement the `PagingCollectionViewDelegate#paginate`
 
 ## Example
 ![alt text](https://github.com/Rahul-Mayani/RRPagingCollectionView/blob/master/sample.gif)
@@ -18,7 +23,7 @@ pod 'Kingfisher'
 
 #### Manually
 1. Download the project.
-2. Add necessary files in your project.
+2. Add `RRPagingCollectionView.swift`, `RRPagingCollectionViewDelegate.swift` & `RRLoadingFooter.swift` with necessary files in your project.
 3. Congratulations!  
 
 ## Usage example
@@ -38,7 +43,7 @@ collectionView.pagingDelegate = self
 func paginateCtn(_ collectionView: RRPagingCollectionView, to page: Int) {
     if !collectionView.isLoading && totalDataCount > dataArray.count {
         collectionView.isLoading = true
-        //API call
+        //API call for getting new data
     }
 }
 
@@ -61,6 +66,15 @@ collectionView.isLoading = false
 
 ```
 
+## APIs
+
+| Name | Type | Description |
+|---|---|---|
+| `pagingDelegate` | `PagingCollectionViewDelegate` | Delegate pagination processing |
+| `currentPage` | `Int` | Returns the current page |
+| `isLoading` | `Bool` | Shows and hides the loading indicator. Reload collection view data after loading |
+| `reset()` | `Void` | Return page to 0 and call `paginate` function |
+
 ## Contribute 
 
 We would love you for the contribution to **RRPagingCollectionView**, check the ``LICENSE`` file for more info.
@@ -68,4 +82,4 @@ We would love you for the contribution to **RRPagingCollectionView**, check the 
 
 ## License
 
-RRPagingCollectionView is available under the MIT license. See the LICENSE file for more info.
+[RRPagingCollectionView](https://github.com/Rahul-Mayani/RRPagingCollectionView/tree/master/RRPagingCollectionView/PagingCollectionView) is available under the MIT license. See the [LICENSE](https://github.com/Rahul-Mayani/RRPagingCollectionView/blob/master/LICENSE) file for more info.
